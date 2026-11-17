@@ -63,10 +63,10 @@ jobs:
           DOCKER_METADATA_ANNOTATIONS_LEVELS: manifest,index
         with:
           images: ${{ env.IMAGE }}
+          # semver tags also get "latest" automatically (flavor latest=auto).
           tags: |
             type=semver,pattern={{version}}
             type=semver,pattern={{major}}.{{minor}}
-            type=raw,value=latest
           labels: |
             org.opencontainers.image.title=mcp-dof
             org.opencontainers.image.description=MCP server for Mexico's Diario Oficial de la Federación (DOF)
