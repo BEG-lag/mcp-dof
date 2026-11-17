@@ -133,12 +133,11 @@ async def list_edition(
             for previous in iter_days(
                 day - timedelta(days=7), day - timedelta(days=1), newest_first=True
             ):
-                if (await client.day_index(previous)).notes:
+                earlier = await client.day_index(previous)
+                if any(n.edition in selected for n in earlier.notes):
                     latest = previous
                     break
-    except DateError as exc:
-        raise ToolError(str(exc)) from exc
-    except SidofError as exc:
+    except (DateError, SidofError) as exc:
         raise ToolError(str(exc)) from exc
     return render_edition(
         index, editions=selected, include_avisos=include_avisos, latest_day=latest
