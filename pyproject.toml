@@ -1,6 +1,6 @@
 [project]
 name = "mcp-dof"
-version = "0.1.0"
+version = "1.0.0"
 description = "MCP server for Mexico's Diario Oficial de la Federación (DOF): daily editions, full texts as Markdown, keyword search and financial indicators."
 readme = "README.md"
 license = "MIT"
@@ -18,7 +18,7 @@ keywords = [
     "regtech",
 ]
 classifiers = [
-    "Development Status :: 4 - Beta",
+    "Development Status :: 5 - Production/Stable",
     "Intended Audience :: Legal Industry",
     "Intended Audience :: Developers",
     "License :: OSI Approved :: MIT License",
