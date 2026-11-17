@@ -74,6 +74,12 @@ Avisos judiciales y generales (edictos, notices of shareholder meetings, etc.) a
 share of each edition and their titles in this endpoint are only codes such as
 `"Aviso REF:581596"`.
 
+Coverage check: fetching every date from 2025-01-01 to 2026-11-17 (682 requests, done by the
+companion project [dof-diario](https://github.com/BEG-lag/dof-diario)) found editions on 484
+dates and 43,994 titled rows, 75.7% of them avisos. No row came under `NotasExtraordinarias` in
+that period: editions published on weekends or holidays (for example 2025-02-02 and 2025-09-14)
+are filed as vespertina or matutina.
+
 ### `GET /notas/nota/{codNota}`: one note with its full HTML
 
 ```json
