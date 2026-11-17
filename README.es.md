@@ -91,8 +91,19 @@ claude mcp add dof -- uvx --from git+https://github.com/BEG-lag/mcp-dof mcp-dof
 }
 ```
 
+**Docker**: cada versión publica una imagen multiarquitectura (linux/amd64, linux/arm64) en GitHub
+Container Registry. En la configuración de cualquier cliente, usa `"command": "docker"` con estos
+argumentos:
+
+```bash
+docker run -i --rm ghcr.io/beg-lag/mcp-dof:1.0.0
+```
+
 **Cualquier otro cliente MCP**: corre `mcp-dof` por stdio, o `mcp-dof --transport http --port 8000`
 para HTTP en `http://127.0.0.1:8000/mcp`.
+
+Los metadatos para el [MCP Registry](https://registry.modelcontextprotocol.io) están en
+[`server.json`](server.json), con el nombre `io.github.BEG-lag/mcp-dof`.
 
 ## Herramientas
 
@@ -145,9 +156,11 @@ src/mcp_dof/
   search.py      intérprete de consultas, coincidencia sin acentos, áreas de práctica
   formatting.py  formato Markdown de los resultados
   dates.py       lectura y validación de fechas en hora de la Ciudad de México
-tests/           78 pruebas sin red con respuestas grabadas + 3 pruebas en vivo opcionales
-scripts/         record_fixtures.py, demo.py (genera docs/demo.md)
+tests/           87 pruebas sin red con respuestas grabadas + 3 pruebas en vivo opcionales
+scripts/         record_fixtures.py, demo.py (genera docs/demo.md), smoke_stdio.py (prueba de arranque)
 docs/api.md      la API de SIDOF, tal como se observó
+Dockerfile       imagen publicada en ghcr.io/beg-lag/mcp-dof
+server.json      metadatos para el MCP Registry
 ```
 
 ## Desarrollo
@@ -158,11 +171,14 @@ uv run pytest                 # sin red: respuestas grabadas de SIDOF
 uv run pytest --live -m live  # opcional: consulta la API real
 uv run ruff check . && uv run ruff format --check .
 uv run python scripts/demo.py # ida y vuelta MCP real por stdio
+docker build -t mcp-dof . && uv run python scripts/smoke_stdio.py -- docker run -i --rm mcp-dof
 ```
 
-La integración continua corre ruff y las pruebas sin red en Python 3.12, 3.13 y 3.14. Otro flujo
-semanal corre las pruebas en vivo, para que un cambio en la API del gobierno aparezca como una
-verificación fallida y no como un agente confundido.
+La integración continua corre ruff y las pruebas sin red en Python 3.12, 3.13 y 3.14, valida
+`server.json` contra el esquema oficial del MCP Registry, y construye el contenedor y revisa su
+saludo MCP. Al subir una etiqueta `vX.Y.Z` se publica la imagen en GHCR. Otro flujo semanal corre
+las pruebas en vivo, para que un cambio en la API del gobierno aparezca como una verificación
+fallida y no como un agente confundido.
 
 ## Limitaciones
 

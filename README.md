@@ -13,6 +13,8 @@
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-eceee6?labelColor=0a0c10">
 </p>
 
+<!-- mcp-name: io.github.BEG-lag/mcp-dof -->
+
 **mcp-dof** is a [Model Context Protocol](https://modelcontextprotocol.io) server that lets Claude
 and other AI agents read Mexico's *Diario Oficial de la Federación* (DOF): what was published on any
 day, the full text of every decree, rule or notice as clean Markdown, title search over date ranges,
@@ -89,8 +91,18 @@ claude mcp add dof -- uvx --from git+https://github.com/BEG-lag/mcp-dof mcp-dof
 }
 ```
 
+**Docker**: every release publishes a multi-arch image (linux/amd64, linux/arm64) to GitHub
+Container Registry. In any client config, use `"command": "docker"` with these arguments:
+
+```bash
+docker run -i --rm ghcr.io/beg-lag/mcp-dof:1.0.0
+```
+
 **Any other MCP client**: run `mcp-dof` over stdio, or `mcp-dof --transport http --port 8000`
 for streamable HTTP at `http://127.0.0.1:8000/mcp`.
+
+The metadata for the [MCP Registry](https://registry.modelcontextprotocol.io) lives in
+[`server.json`](server.json), under the name `io.github.BEG-lag/mcp-dof`.
 
 ## Tools
 
@@ -143,9 +155,11 @@ src/mcp_dof/
   search.py      query parser, accent-insensitive matching, practice-area presets
   formatting.py  Markdown rendering of tool results
   dates.py       date parsing and validation in Mexico City time
-tests/           78 offline tests on recorded fixtures + 3 opt-in live tests
-scripts/         record_fixtures.py, demo.py (writes docs/demo.md)
+tests/           87 offline tests on recorded fixtures + 3 opt-in live tests
+scripts/         record_fixtures.py, demo.py (writes docs/demo.md), smoke_stdio.py (handshake check)
 docs/api.md      the SIDOF API, as observed
+Dockerfile       container image published to ghcr.io/beg-lag/mcp-dof
+server.json      MCP Registry metadata
 ```
 
 ## Development
@@ -156,11 +170,13 @@ uv run pytest                 # offline: recorded SIDOF responses, no network
 uv run pytest --live -m live  # opt in: hits the real API
 uv run ruff check . && uv run ruff format --check .
 uv run python scripts/demo.py # real MCP round trip over stdio
+docker build -t mcp-dof . && uv run python scripts/smoke_stdio.py -- docker run -i --rm mcp-dof
 ```
 
-CI runs ruff and the offline suite on Python 3.12, 3.13 and 3.14. A separate weekly workflow runs
-the live tests, so a change in the government API shows up as a failed check instead of a
-confused agent.
+CI runs ruff and the offline suite on Python 3.12, 3.13 and 3.14, validates `server.json` against
+the official MCP Registry schema, and builds the container and checks its MCP handshake. Pushing a
+`vX.Y.Z` tag publishes the image to GHCR. A separate weekly workflow runs the live tests, so a
+change in the government API shows up as a failed check instead of a confused agent.
 
 ## Limitations
 

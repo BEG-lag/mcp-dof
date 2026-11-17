@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.BEG-lag/mcp-dof",
+  "title": "DOF: Diario Oficial de la Federación",
+  "description": "Mexico's official gazette (DOF): daily editions, full texts, title search, FIX, UDIS and TIIE.",
+  "repository": {
+    "url": "https://github.com/BEG-lag/mcp-dof",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/BEG-lag/mcp-dof",
+  "version": "1.0.0",
+  "packages": [
+    {
+      "registryType": "oci",
+      "identifier": "ghcr.io/beg-lag/mcp-dof:1.0.0",
+      "runtimeHint": "docker",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}
