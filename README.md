@@ -14,6 +14,13 @@
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.BEG-lag/mcp-dof"><img alt="MCP Registry: io.github.BEG-lag/mcp-dof" src="https://img.shields.io/badge/MCP_Registry-listed-cfff45?labelColor=0a0c10"></a>
 </p>
 
+<!-- demo:start -->
+<p align="center">
+  <img src="assets/demo.gif" alt="Re-staging of the real MCP session recorded in docs/demo.md: list_edition for 2026-11-13 returns that day's DOF table of contents, get_indicators returns the FIX rate, UDIS and TIIE published on 2026-11-17, and get_indicator_history charts the FIX rate from 2026-11-03 to 2026-11-17. Tool output unedited." width="100%">
+</p>
+<p align="center"><sub>Re-staged from the real session in <a href="docs/demo.md">docs/demo.md</a>. <a href="assets/demo.mp4">MP4 version</a>.</sub></p>
+<!-- demo:end -->
+
 <!-- mcp-name: io.github.BEG-lag/mcp-dof -->
 
 **mcp-dof** is a [Model Context Protocol](https://modelcontextprotocol.io) server that lets Claude

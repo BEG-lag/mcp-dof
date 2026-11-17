@@ -14,6 +14,13 @@
   <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.BEG-lag/mcp-dof"><img alt="Registro MCP: io.github.BEG-lag/mcp-dof" src="https://img.shields.io/badge/Registro_MCP-publicado-cfff45?labelColor=0a0c10"></a>
 </p>
 
+<!-- demo:start -->
+<p align="center">
+  <img src="assets/demo.gif" alt="Re-escenificación de la sesión MCP real grabada en docs/demo.md: list_edition del 2026-11-13 devuelve el sumario del DOF de ese día, get_indicators el FIX, las UDIS y la TIIE publicados el 2026-11-17 y get_indicator_history grafica el FIX del 2026-11-03 al 2026-11-17. Resultados sin editar." width="100%">
+</p>
+<p align="center"><sub>Re-escenificada a partir de la sesión real de <a href="docs/demo.md">docs/demo.md</a>. <a href="assets/demo.mp4">Versión MP4</a>.</sub></p>
+<!-- demo:end -->
+
 **mcp-dof** es un servidor [Model Context Protocol](https://modelcontextprotocol.io) que permite a
 Claude y a otros agentes de IA leer el *Diario Oficial de la Federación* (DOF): qué se publicó
 cualquier día, el texto íntegro de cada decreto, acuerdo o aviso en Markdown limpio, búsqueda por
