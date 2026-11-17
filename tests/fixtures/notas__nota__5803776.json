@@ -1,0 +1,29 @@
+{
+ "messageCode": 200,
+ "response": "OK",
+ "Nota": {
+  "codNota": 5803776,
+  "titulo": "Tasas de interés interbancarias de equilibrio.",
+  "codSeccion": "UNICA",
+  "fecha": "13-11-2026",
+  "codDiario": 330805,
+  "cadenaContenido": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\" \"http://www.w3.org/TR/html4/strict.dtd\"> <HTML> <head>   <title>TASAS de interés interbancarias de equilibrio</title>                            <style type='text/css'> .Fechas {margin-right:14.4pt;text-indent:0.0pt;text-align:justify;font-size:9.0pt;border-bottom: 0.75pt solid rgb(0,0,0);margin-left:14.4pt;margin-bottom:0.0pt;font-family:serif,Times,Times Roman,Times-Roman;padding-bottom:0.05pt;} .Normal {text-indent:0.0pt;font-size:12.0pt;margin-left:0.0pt;font-family:serif,Times,Times Roman,Times-Roman;} .Texto {text-indent:14.4pt;text-align:justify;font-size:9.0pt;margin-left:0.0pt;margin-bottom:5.05pt;font-family:Tahoma,Arial Unicode MS,Verdana,system, , ,Arial Black,sans-serif,Helvetica,dialog;} .Titulo_2 {padding-top:0.05pt;text-indent:0.0pt;text-align:justify;font-size:9.0pt;margin-left:0.0pt;margin-bottom:5.05pt;font-family:Tahoma,Arial Unicode MS,Verdana,system, , ,Arial Black,sans-serif,Helvetica,dialog;border-top: 0.75pt solid rgb(0,0,0);} .Titulo_1 {text-indent:0.0pt;text-align:justify;font-size:9.0pt;border-bottom: 1.5pt solid rgb(0,0,0);margin-left:0.0pt;margin-bottom:0.0pt;font-family:serif,Times,Times Roman,Times-Roman;margin-top:6.0pt;font-weight:bold;padding-bottom:0.05pt;} </style> </head> <BODY> <div style= '' > <h1 style='border-bottom: 1.5pt solid rgb(0,0,0);margin-bottom:0.0pt;margin-left:0.0pt;margin-top:6.0pt;text-indent:0.0pt;' class='Titulo_1'> <span style='font-family:Times;'>TASAS</span><span style='font-family:Times;'> </span><span style='font-family:Times;'>de interés interbancarias de equilibrio.</span></h1> <h2 style='border-top: 0.75pt solid rgb(0,0,0);margin-bottom:5.05pt;margin-left:0.0pt;text-indent:0.0pt;' class='Titulo_2'> <span style='font-family:Arial;'>Al margen un logotipo, que dice: Banco de México.- &#39;&#39;2026, Año de Margarita Maza Parada&#39;&#39;.</span></h2> <div style='margin-bottom:5.05pt;margin-left:0.0pt;text-indent:14.4pt;' class='Texto'> <span style='font-family:Arial;'>TASAS DE INTERÉS INTERBANCARIAS DE EQUILIBRIO</span></div> <div style='margin-bottom:5.05pt;margin-left:0.0pt;text-indent:14.4pt;' class='Texto'> <span style='font-family:Arial;'>El Banco de México, con fundamento en los artículos 8o y 10 del Reglamento Interior del Banco de México</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>y de conformidad con el procedimiento establecido en el Capítulo IV del Título Tercero de su Circular 3/2012,</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>informa que la Tasa de Interés Interbancaria de Equilibrio en moneda nacional (TIIE) a plazo de 28 días</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>obtenida el día de hoy, fue de 6.5147%; a plazo de 91 días obtenida el día de hoy, fue de 6.5492%; y a plazo</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>de 182 días obtenida el día de hoy, fue de 6.5995%.</span></div> <div style='margin-bottom:5.05pt;margin-left:0.0pt;text-indent:14.4pt;' class='Texto'> <span style='font-family:Arial;'>Ciudad de México, a 12 de noviembre de 2026</span><span style='font-family:Arial;'>.- </span><span style='font-family:Arial;'>BANCO DE MÉXICO</span><span style='font-family:Arial;'>: </span><span style='font-family:Arial;'>Gerente de Instrumentación</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>de</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>Operaciones</span><span style='font-family:Arial;'>, </span><span style='font-family:Arial;'>Lic. </span><span style='font-family:Arial;font-weight:bold;'>Pilar María Figueredo Díaz</span><span style='font-family:Arial;'>.- Rúbrica.- </span><span style='font-family:Arial;'>Subgerente de Operaciones de Mercado</span><span style='font-family:Arial;'>, </span><span style='font-family:Arial;'>Lic.</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;font-weight:bold;'>Carlos Miguel Vélez Martínez</span><span style='font-family:Arial;'>.- Rúbrica.- </span><span style='font-family:Arial;'>Subgerente de Instrumentación de Operaciones Internacionales</span><span style='font-family:Arial;'>,</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>Lic. </span><span style='font-family:Arial;font-weight:bold;'>Luis Murray Arriaga</span><span style='font-family:Arial;'>.- Rúbrica.- </span><span style='font-family:Arial;'>Subgerente de Cambios Nacionales</span><span style='font-family:Arial;'>, </span><span style='font-family:Arial;'>Lic. </span><span style='font-family:Arial;font-weight:bold;'>Diego Rafael Toledo Polis</span><span style='font-family:Arial;'>.-</span><span style='font-family:Arial;'> </span><span style='font-family:Arial;'>Rúbrica.</span></div> <div style='margin-bottom:5.05pt;margin-left:0.0pt;text-indent:14.4pt;' class='Texto'> &nbsp;</div> </div>  </BODY> </HTML> ",
+  "existeDoc": "S",
+  "existeImagen": "S",
+  "tipoNota": "null",
+  "estado": 2,
+  "pagina": 178,
+  "paginaHasta": 0,
+  "codOrgaUno": "ORGANISMOS AUTONOMOS",
+  "codOrgaDos": "BANCO DE MEXICO",
+  "codOrgaTres": "null",
+  "codOrgaCuatro": "null",
+  "nombOrganismo": "null",
+  "orden": 21.0,
+  "codEdicion": "MAT",
+  "tamanioContenido": 0,
+  "ordenSeccion": 0,
+  "existePdf": "S"
+ },
+ "tamanioExcesivo": false
+}
