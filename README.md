@@ -11,6 +11,7 @@
   <img alt="Python 3.12+" src="https://img.shields.io/badge/python-3.12%2B-cfff45?labelColor=0a0c10">
   <img alt="MCP" src="https://img.shields.io/badge/MCP-FastMCP-7fd8ff?labelColor=0a0c10">
   <img alt="License: MIT" src="https://img.shields.io/badge/license-MIT-eceee6?labelColor=0a0c10">
+  <a href="https://registry.modelcontextprotocol.io/v0.1/servers?search=io.github.BEG-lag/mcp-dof"><img alt="MCP Registry: io.github.BEG-lag/mcp-dof" src="https://img.shields.io/badge/MCP_Registry-listed-cfff45?labelColor=0a0c10"></a>
 </p>
 
 <!-- mcp-name: io.github.BEG-lag/mcp-dof -->
