@@ -1,4 +1,8 @@
 <p align="center">
+  <a href="https://pivotek.mx"><img src="assets/pivotek-logo.svg" alt="PIVOTEK" width="200"></a>
+</p>
+
+<p align="center">
   <img src="assets/banner.svg" alt="mcp-dof: el Diario Oficial de la Federación como herramientas para tu agente de IA" width="100%">
 </p>
 
